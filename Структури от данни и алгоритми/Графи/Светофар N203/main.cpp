@@ -7,7 +7,7 @@
 
 using namespace std;
 
-vector<int> vect[16]; //Âåêòîð â êîéòî ùå ñúõðàíÿâàìå ãðàôà
+vector<int> vect[16]; //Графът, предстваен с вектор
 
 void addEdge(vector<int> *vect, int u, int v)
 {
