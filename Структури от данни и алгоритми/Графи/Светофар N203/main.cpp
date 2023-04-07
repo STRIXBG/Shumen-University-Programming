@@ -2,3 +2,39 @@
 всеки тунел преди всяко кръстовище. Напишете програма SVET, която преброява, колко светофара трябва да се поставят на всяко. 
 Кръстовищата са номерирани с числата от 1 до N.*/
 
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<int> vect[16]; //Âåêòîð â êîéòî ùå ñúõðàíÿâàìå ãðàôà
+
+void addEdge(vector<int> *vect, int u, int v)
+{
+	vect[u].push_back(v);
+	vect[v].push_back(u);
+}
+
+void printConnections(vector<int> *vect, int M)
+{
+	for(int i=1; i<=M; i++)
+	{
+		cout << vect[i].size() << ' ';
+	}
+}
+
+int main()
+{
+	int M, N;
+	cin >> M >> N;
+	
+	for(int i=0; i<N; i++)
+	{
+		int u, v;
+		cin >> u >> v;
+		addEdge(vect, u, v);
+	}
+	
+	printConnections(vect, M);
+	return 0;
+}
