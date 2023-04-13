@@ -48,21 +48,21 @@ Point :: Point()
 	if(idx != 9)
 	{
 		double x, y, z;
-		cout << "Â ìîìåíòà âúâåæäàòå äàííè çà point idx: " << idx << endl;
-		cout << "Äîáàâåòå êîîðäèíàòèòå x, y, z. Ðàçäåëåòå ãè ñ èíòåðâàë\n";
+		cout << "В момента въвеждате данни за point idx: " << idx << endl;
+		cout << "Добавете координатите x, y, z. Разделете ги с интервал\n";
 		cin >> x >> y >> z;
 		setX(x);
 		setY(y);
 		setZ(z);
-		cout << "Äàííèòå áÿõà çàïèñàíè óñïåøíî!\n";
+		cout << "Данните бяха записани успешно!\n";
 		idx++;
 	}
 }
 
 Point :: ~Point() 
 {
-	if(idx != 9) cout << "Ñåãà ùå âèäèòå ñòîéíîñòèòå çà Point idx: " << idx << endl;
-	else cout << endl << endl << "Ñåãà ùå âèäèòå ñòîéíîñòèòå çà Point 9 â êîéòî å ðåøåíèåòî íà çàäà÷àòà\n";
+	if(idx != 9) cout << "Сега ще видите стойностите за Point idx: " << idx << endl;
+	else cout << endl << endl << "Сега ще видите стойностите за Point 9 в който е решението на задачата\n";
 	cout << "x: " << this->x << endl;
 	cout << "y: " << this->y << endl;
 	cout << "z: " << this->z << endl;
