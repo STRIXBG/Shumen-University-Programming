@@ -58,10 +58,19 @@
         $lectures = array("Petrov", "Nikolov", "Georgiev");
 
         // Print_r - print the whole array:
-        echo '<br><br>print_r: Testing:';
+        echo '<br><br>print_r: Testing: <br>';
         print_r($lectures);
 
         unset($lectures);
+
+        //array_values (Preindexing the array):
+        echo '<br><br>Preindexing with array_values: <br>';
+
+        $lectures[] = 'Simeonov';
+        $lectuers = array_values($students);
+        $lectuers[] = 'Todorov';
+
+        print_r($lectuers);
         ?>
     </body>
 </html>
