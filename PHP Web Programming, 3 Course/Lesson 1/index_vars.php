@@ -36,6 +36,17 @@
 
         sum();
         echo '<br>Sum Function:<br>' . $a_ . '<br>' . $b_ . '<br>' . $c_;
+
+        // SUPER GLOBAL VARIABLES:
+        // $GLOBALS
+        // $_SERVER -> server's var
+        // $_GET -> array of variables given by script GET
+        // $_POST -> array of variables given by script POST
+        // $_COOKIE -> array of cookie
+        // $_FILES -> array of given variables given as files
+        // $_ENV -> array of env
+        // $_SESSION -> array of session's variables
+        // $_REQUEST -> array of given by the user variables (get, post, cookie)
         ?>
     </body>
 </html>
