@@ -10,6 +10,11 @@
     while (!feof($file)) {
         echo fgets($file) . '<br>';
     }
+    echo '<hr>';
+
+    while (!feof($file)) {
+        echo fgetc($file) . '<br>';
+    }
 
     fclose($file);
     ?>
